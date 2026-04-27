@@ -33,7 +33,7 @@ import { Component, OnInit, ElementRef } from '@angular/core';
       &.visible { opacity: 1; transform: translateY(0); }
     }
     .section-label { grid-column:1; grid-row:1; font-family:var(--font-body); font-weight:500; font-size:.6rem; letter-spacing:.28em; text-transform:uppercase; color:var(--gold); }
-    .section-title { grid-column:2; grid-row:1; font-family:var(--font-display); font-weight:300; font-size:clamp(2rem,4vw,3.2rem); line-height:1.15; color:var(--text-primary); em { font-style:italic; color:var(--gold-light); } }
+    .section-title { grid-column:2; grid-row:1; font-family:var(--font-display); font-weight:300; font-size:clamp(2rem,4vw,3.2rem); line-height:1.15; color:var(--gold); em { font-style:italic; color:var(--gold-light); } }
     .section-desc  { grid-column:3; grid-row:1; font-weight:300; font-size:.9rem; line-height:1.9; color:var(--text-muted); padding-top:.5rem; }
     .cards-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1px; background: var(--gold-border); }
     .card { position:relative; background:var(--bg-primary); padding:2.5rem 2rem; display:flex; flex-direction:column; gap:1.25rem; overflow:hidden; opacity:0; transform:translateY(24px); transition:opacity .6s ease, transform .6s ease, background var(--transition);
@@ -43,7 +43,7 @@ import { Component, OnInit, ElementRef } from '@angular/core';
     .card-icon { width:44px; height:44px; display:flex; align-items:center; justify-content:center;
       :global(svg) { width:28px; height:28px; stroke:var(--gold); fill:none; stroke-width:1.2; }
     }
-    .card-title { font-weight:500; font-size:.72rem; letter-spacing:.2em; text-transform:uppercase; color:var(--text-primary); }
+    .card-title { font-weight:500; font-size:.72rem; letter-spacing:.2em; text-transform:uppercase; color:var(--gold); }
     .card-desc  { font-weight:300; font-size:.85rem; line-height:1.75; color:var(--text-muted); flex:1; }
     .card-line  { position:absolute; bottom:0; left:0; height:1px; width:0; background:var(--gold); transition:width .5s ease; }
     @media (max-width:1024px) { .cards-grid { grid-template-columns:repeat(2,1fr); } .section-header { grid-template-columns:1fr; } }

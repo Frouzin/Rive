@@ -9,7 +9,7 @@ import { RouterLink } from '@angular/router';
     <section class="hero">
       <div class="hero-bg">
         <div class="hero-overlay"></div>
-        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1920&q=80&auto=format&fit=crop"
+        <img src="assets/imagem/vernati (84).jpeg"
              alt="Praia ensolarada com guarda-sol premium" class="hero-img"/>
       </div>
       <div class="hero-content">
@@ -44,12 +44,12 @@ import { RouterLink } from '@angular/router';
     .hero-title { font-family: var(--font-display); font-weight: 300; font-size: clamp(3.5rem, 9vw, 8rem); line-height: 1.0; color: var(--text-primary); margin-bottom: 1.75rem; animation: fadeUp 0.9s 0.5s both;
       em { font-style: italic; color: var(--gold-light); }
     }
-    .hero-sub { font-weight: 300; font-size: 1rem; line-height: 1.8; color: rgba(242,237,232,0.65); max-width: 400px; margin-bottom: 2.5rem; animation: fadeUp 0.9s 0.7s both; }
+    .hero-sub { font-weight: 400; font-size: 1rem; line-height: 1.8; color: rgba(65, 65, 65, 0.65); max-width: 400px; margin-bottom: 2.5rem; animation: fadeUp 0.9s 0.7s both; }
     .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 4rem; animation: fadeUp 0.9s 0.9s both; }
     .hero-stats { display: flex; align-items: center; gap: 2rem; animation: fadeUp 0.9s 1.1s both; }
     .stat { display: flex; flex-direction: column; gap: 0.25rem; }
-    .stat-n { font-family: var(--font-display); font-size: 1.6rem; font-weight: 300; color: var(--text-primary); line-height: 1; }
-    .stat-l { font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); }
+    .stat-n { font-family: var(--font-display); font-size: 1.6rem; font-weight: 600; color: var(--gold); line-height: 1; }
+    .stat-l { font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); font-weight: 500;}
     .stat-div { width: 1px; height: 32px; background: var(--gold-border); }
     .scroll-cue { position: absolute; bottom: 2.5rem; left: 2.5rem; z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 0.75rem; animation: fadeIn 1s 1.5s both; }
     .scroll-line { display: block; width: 1px; height: 48px; background: linear-gradient(to bottom, var(--gold), transparent); animation: scrollPulse 2s ease-in-out infinite; }

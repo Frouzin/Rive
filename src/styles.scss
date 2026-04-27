@@ -2,19 +2,19 @@
    RIVE BRASIL — Global Styles
    ───────────────────────────────────────────── */
 :root {
-  --bg-primary:    #080808;
-  --bg-secondary:  #0f0f0f;
-  --bg-card:       #141414;
-  --bg-card-hover: #1a1a1a;
+  --bg-primary:    #ffffff;
+  --bg-secondary:  #f1f1f1;
+  --bg-card:       #d6d6d6;
+  --bg-card-hover: #dadada;
 
-  --gold:          #C4A05D;
-  --gold-light:    #DFC07A;
-  --gold-dim:      rgba(196, 160, 93, 0.12);
-  --gold-border:   rgba(196, 160, 93, 0.22);
+  --gold:          #1b2149;
+  --gold-light:    #15182c;
+  --gold-dim:      rgba(4, 50, 77, 0.12);
+  --gold-border:   rgba(8, 34, 82, 0.459);
 
   --text-primary:  #F2EDE8;
-  --text-muted:    #7A7570;
-  --text-subtle:   #4A4540;
+  --text-muted:    #2e2e2e;
+  --text-subtle:   #202020;
 
   --font-display: 'Cormorant Garamond', Georgia, serif;
   --font-body:    'Jost', sans-serif;
@@ -71,14 +71,22 @@ body::before {
   font-size: 0.62rem;
   letter-spacing: 0.28em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--gold-light);
+}
+
+.intro-title {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 2.12rem !important;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--gold-light) !important;
 }
 
 .btn-primary {
   display: inline-block;
   padding: 0.9rem 2.25rem;
   background: var(--gold);
-  color: #080808;
   font-family: var(--font-body);
   font-weight: 500;
   font-size: 0.7rem;
@@ -94,7 +102,7 @@ body::before {
   display: inline-block;
   padding: 0.9rem 2.25rem;
   border: 1px solid var(--gold-border);
-  color: var(--text-primary);
+  color: var(--text-subtle);
   font-family: var(--font-body);
   font-weight: 300;
   font-size: 0.7rem;
@@ -103,6 +111,30 @@ body::before {
   transition: border-color var(--transition), background var(--transition);
   cursor: pointer;
   &:hover { border-color: var(--gold); background: var(--gold-dim); }
+}
+
+.card-img img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+
+  opacity: 0;
+  transform: scale(1);
+  transition: opacity 0.8s ease, transform 4s ease;
+}
+
+.img-bg {
+  object-fit: cover;
+  object-position: top;
+}
+
+.card-img img.active {
+  opacity: 1;
+  transform: scale(1.05);
+  z-index: 1;
 }
 
 /* Animations */

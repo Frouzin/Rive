@@ -40,7 +40,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
       border-bottom: 1px solid transparent;
     }
     header.scrolled {
-      background: rgba(8,8,8,0.92);
+      background: rgba(26, 26, 26, 0.92);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
       border-bottom-color: var(--gold-border);
@@ -64,14 +64,14 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
       font-weight: 600;
       font-size: 1.5rem;
       letter-spacing: 0.15em;
-      color: var(--text-primary);
+      color: var(--primary);
     }
     .logo-sub {
       font-family: var(--font-body);
-      font-weight: 200;
+      font-weight: 300;
       font-size: 0.5rem;
       letter-spacing: 0.5em;
-      color: var(--gold);
+      color: var(--primary-card);
       text-transform: uppercase;
     }
     .nav-links {
@@ -80,11 +80,11 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
       gap: 2rem;
       a {
         font-family: var(--font-body);
-        font-weight: 300;
+        font-weight: 400;
         font-size: 0.75rem;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        color: var(--text-primary);
+        color: var(--primary);
         opacity: 0.7;
         transition: opacity var(--transition-fast);
         position: relative;
@@ -97,18 +97,17 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
           transition: width var(--transition);
         }
         &:hover, &.active { opacity: 1; &::after { width: 100%; } }
-        &.active { color: var(--gold-light); }
+        &.active { color: var(--bg-secondary); }
       }
       .nav-cta {
         padding: 0.5rem 1.4rem;
-        border: 1px solid var(--gold-border);
-        color: var(--gold) !important;
+        border: 1px solid var(--primary);
+        color: var(--primary) !important;
         opacity: 1 !important;
         letter-spacing: 0.15em;
         &::after { display: none !important; }
         &:hover, &.active {
-          background: var(--gold-dim);
-          border-color: var(--gold);
+          border-color: var(--primary-light);
         }
       }
     }

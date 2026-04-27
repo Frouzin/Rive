@@ -11,7 +11,7 @@ import { PageHeroComponent } from '../../shared/page-hero.component';
       title="Guarda-Chuva"
       eyebrow="Proteção com Presença"
       subtitle="Mais do que proteger — levar a identidade da marca para o cotidiano com elegância e personalidade."
-      img="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=1920&q=80&auto=format&fit=crop"
+      img="assets/imagem/vernati (11).jpeg"
     ></app-page-hero>
 
     <!-- Intro -->
@@ -28,7 +28,7 @@ import { PageHeroComponent } from '../../shared/page-hero.component';
             </a>
           </div>
           <div class="intro-image">
-            <img src="https://images.unsplash.com/photo-1621600411688-4be93cd68504?w=900&q=80&auto=format&fit=crop" alt="Guarda-chuva premium Rive"/>
+            <img src="assets/imagem/vernati (1).jpeg" alt="Guarda-chuva premium Rive"/>
             <div class="img-accent"></div>
           </div>
         </div>
@@ -60,11 +60,11 @@ import { PageHeroComponent } from '../../shared/page-hero.component';
         <span class="section-label">Galeria</span>
         <div class="gallery-grid">
           <div class="gal-main">
-            <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=900&q=80&auto=format&fit=crop" alt="Guarda-chuva Rive"/>
+            <img src="assets/imagem/vernati (3).jpeg" alt="Guarda-chuva Rive"/>
           </div>
           <div class="gal-side">
-            <img src="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=600&q=80&auto=format&fit=crop" alt="Detalhe guarda-chuva"/>
-            <img src="https://images.unsplash.com/photo-1621600411688-4be93cd68504?w=600&q=80&auto=format&fit=crop" alt="Guarda-chuva personalizado"/>
+            <img src="assets/imagem/vernati (7).jpeg" alt="Detalhe guarda-chuva"/>
+            <img src="assets/imagem/vernati (52).jpeg" alt="Guarda-chuva personalizado"/>
           </div>
         </div>
       </div>
@@ -111,14 +111,14 @@ import { PageHeroComponent } from '../../shared/page-hero.component';
         <span class="section-label">Conheça também</span>
         <div class="outros-grid">
           <a routerLink="/guarda-sol" class="outro-card">
-            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80&auto=format&fit=crop" alt="Guarda-Sol"/>
+            <img src="assets/imagem/vernati (35).jpeg" alt="Guarda-Sol"/>
             <div class="outro-info">
               <h4>Guarda-Sol</h4>
               <span>Sombra que vira cenário →</span>
             </div>
           </a>
           <a routerLink="/ombrelones" class="outro-card">
-            <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=600&q=80&auto=format&fit=crop" alt="Ombrelones"/>
+            <img src="assets/imagem/vernati (93).jpeg" alt="Ombrelones"/>
             <div class="outro-info">
               <h4>Ombrelones</h4>
               <span>Seu lounge, ao sol →</span>
@@ -135,7 +135,7 @@ import { PageHeroComponent } from '../../shared/page-hero.component';
     .intro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center; }
     .intro-text {
       display: flex; flex-direction: column; gap: 1.25rem;
-      .section-label { margin-bottom: .5rem; }
+      .section-label { margin-bottom: .5rem; color: var(--gold-light);}
       p { font-weight: 300; font-size: .95rem; line-height: 1.9; color: var(--text-muted); }
     }
     .intro-title { font-family: var(--font-display); font-weight: 300; font-size: clamp(2rem,4vw,3.2rem); line-height: 1.1; color: var(--text-primary); em { font-style: italic; color: var(--gold-light); } }
@@ -153,12 +153,12 @@ import { PageHeroComponent } from '../../shared/page-hero.component';
     .features-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--gold-border); }
     .feature-card { background: var(--bg-primary); padding: 2.5rem 2rem; display: flex; flex-direction: column; gap: 1rem; transition: background var(--transition); &:hover { background: var(--bg-card-hover); } }
     .feature-num { font-family: var(--font-display); font-size: 3rem; font-weight: 300; color: var(--gold-border); line-height: 1; }
-    .feature-title { font-weight: 500; font-size: .72rem; letter-spacing: .2em; text-transform: uppercase; color: var(--text-primary); }
+    .feature-title { font-weight: 500; font-size: .72rem; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); }
     .feature-desc { font-weight: 300; font-size: .88rem; line-height: 1.8; color: var(--text-muted); }
 
     /* Gallery */
     .gallery { padding: 8rem 2.5rem; background: var(--bg-primary); }
-    .gallery .section-label { display: block; margin-bottom: 2rem; }
+    .gallery .section-label { display: block; margin-bottom: 2rem; color: var(--gold-light); }
     .gallery-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 1rem; }
     .gal-main img { width: 100%; height: 100%; max-height: 580px; object-fit: cover; }
     .gal-side { display: flex; flex-direction: column; gap: 1rem;
@@ -176,7 +176,7 @@ import { PageHeroComponent } from '../../shared/page-hero.component';
     .editorial-text { display: flex; flex-direction: column; gap: 1.25rem;
       p { font-weight: 300; font-size: .95rem; line-height: 1.9; color: var(--text-muted); }
     }
-    .editorial-title { font-family: var(--font-display); font-weight: 300; font-size: clamp(1.8rem,3vw,2.4rem); line-height: 1.2; }
+    .editorial-title { font-family: var(--font-display); font-weight: 300; font-size: clamp(1.8rem,3vw,2.4rem); line-height: 1.2; color: var(--gold); em { font-style: italic; color: var(--gold-light); } }
     .editorial-img img { width: 100%; aspect-ratio: 4/3; object-fit: cover; }
 
     /* CTA */
@@ -185,12 +185,12 @@ import { PageHeroComponent } from '../../shared/page-hero.component';
     .cta-text { display: flex; flex-direction: column; gap: 1.25rem;
       p { font-weight: 300; font-size: .95rem; line-height: 1.9; color: var(--text-muted); max-width: 500px; }
     }
-    .cta-title { font-family: var(--font-display); font-weight: 300; font-size: clamp(1.8rem,3vw,2.6rem); line-height: 1.15; em { font-style: italic; color: var(--gold-light); } }
+    .cta-title { font-family: var(--font-display); font-weight: 300; font-size: clamp(1.8rem,3vw,2.6rem); line-height: 1.15; color: var(--gold) !important; em { font-style: italic;} }
     .cta-actions { display: flex; flex-direction: column; gap: 1rem; flex-shrink: 0; }
 
     /* Outros */
     .outros { padding: 0 2.5rem 8rem; background: var(--bg-primary); }
-    .outros .section-label { display: block; margin-bottom: 2rem; }
+    .outros .section-label { display: block; margin-bottom: 2rem; color: var(--gold-light); }
     .outros-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
     .outro-card { position: relative; overflow: hidden; aspect-ratio: 16/9; display: flex; align-items: flex-end;
       img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .7s ease; }
@@ -226,8 +226,8 @@ export class GuardaChuvaPageComponent implements OnInit {
   ];
   editorials = [
     { label: 'Personalização', title: 'Construção que transmite confiança', text: 'Mais do que proteção, o guarda-chuva Rive entrega sensação de solidez no uso diário. Uma estrutura pensada para unir resistência, estabilidade e presença visual em cada detalhe.',
-      img: 'https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=900&q=80&auto=format&fit=crop' },
+      img: 'assets/imagem/vernati (83).jpeg' },
     { label: 'Identidade de Marca', title: 'Para marcas que querem ser lembradas', text: 'A personalização transforma o guarda-chuva em um ponto de contato memorável. Ideal para marcas, eventos e ações promocionais que querem unir utilidade, visibilidade e acabamento superior.',
-      img: 'https://images.unsplash.com/photo-1621600411688-4be93cd68504?w=900&q=80&auto=format&fit=crop' }
+      img: 'assets/imagem/vernati (87).jpeg' }
   ];
 }

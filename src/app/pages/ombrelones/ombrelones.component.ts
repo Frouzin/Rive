@@ -11,7 +11,7 @@ import { PageHeroComponent } from '../../shared/page-hero.component';
       title="Ombrelones"
       eyebrow="Hospitalidade Premium"
       subtitle="Para hotéis, resorts, restaurantes e rooftops — o lounge perfeito começa com a sombra certa."
-      img="https://images.unsplash.com/photo-1530053969600-caed2596d242?w=1920&q=80&auto=format&fit=crop"
+      img="assets/imagem/vernati (35).jpeg"
     ></app-page-hero>
 
     <!-- Intro -->
@@ -29,7 +29,7 @@ import { PageHeroComponent } from '../../shared/page-hero.component';
             </div>
           </div>
           <div class="intro-image">
-            <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=900&q=80&auto=format&fit=crop" alt="Ombrelone premium em resort"/>
+            <img src="assets/imagem/vernati (70).jpeg" alt="Ombrelone premium em resort"/>
             <div class="img-accent"></div>
           </div>
         </div>
@@ -86,12 +86,12 @@ import { PageHeroComponent } from '../../shared/page-hero.component';
         <span class="section-label">Ambientes</span>
         <div class="gallery-masonry">
           <div class="gal-col">
-            <img src="https://images.unsplash.com/photo-1530053969600-caed2596d242?w=700&q=80&auto=format&fit=crop" alt="Área de piscina"/>
-            <img src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=700&q=80&auto=format&fit=crop" alt="Restaurante externo"/>
+            <img src="assets/imagem/vernati (71).jpeg" alt="Área de piscina"/>
+            <img src="assets/imagem/vernati (79).jpeg" alt="Restaurante externo"/>
           </div>
           <div class="gal-col offset">
-            <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=700&q=80&auto=format&fit=crop" alt="Resort premium"/>
-            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=700&q=80&auto=format&fit=crop" alt="Praia exclusiva"/>
+            <img src="assets/imagem/vernati (85).jpeg" alt="Resort premium"/>
+            <img src="assets/imagem/vernati (46).jpeg" alt="Praia exclusiva"/>
           </div>
         </div>
       </div>
@@ -139,11 +139,11 @@ import { PageHeroComponent } from '../../shared/page-hero.component';
         <span class="section-label">Conheça também</span>
         <div class="outros-grid">
           <a routerLink="/guarda-chuva" class="outro-card">
-            <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600&q=80&auto=format&fit=crop" alt="Guarda-Chuva"/>
+            <img src="assets/imagem/vernati (94).jpeg" alt="Guarda-Chuva"/>
             <div class="outro-info"><h4>Guarda-Chuva</h4><span>Proteção com assinatura →</span></div>
           </a>
           <a routerLink="/guarda-sol" class="outro-card">
-            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80&auto=format&fit=crop" alt="Guarda-Sol"/>
+            <img src="assets/imagem/vernati (35).jpeg" alt="Guarda-Sol"/>
             <div class="outro-info"><h4>Guarda-Sol</h4><span>Sombra que vira cenário →</span></div>
           </a>
         </div>
@@ -175,9 +175,9 @@ import { PageHeroComponent } from '../../shared/page-hero.component';
     .tipo-card { background:var(--bg-primary); border:1px solid var(--gold-border); overflow:hidden; transition:border-color var(--transition); &:hover { border-color:var(--gold); } }
     .tipo-img { position:relative; aspect-ratio:4/3; overflow:hidden; img { width:100%; height:100%; object-fit:cover; transition:transform .7s ease; } }
     .tipo-card:hover .tipo-img img { transform:scale(1.05); }
-    .tipo-tag { position:absolute; top:1rem; left:1rem; padding:.35rem .75rem; background:rgba(8,8,8,.85); border:1px solid var(--gold-border); font-size:.58rem; font-weight:500; letter-spacing:.2em; text-transform:uppercase; color:var(--gold); }
+    .tipo-tag { position:absolute; top:1rem; left:1rem; padding:.35rem .75rem; background:rgba(253, 253, 253, 0.85); border:1px solid var(--gold-border); font-size:.58rem; font-weight:500; letter-spacing:.2em; text-transform:uppercase; color:var(--gold); }
     .tipo-info { padding:2rem; display:flex; flex-direction:column; gap:1rem; }
-    .tipo-title { font-family:var(--font-display); font-weight:400; font-size:1.3rem; }
+    .tipo-title { font-family:var(--font-display); font-weight:400; font-size:1.3rem; color:var(--gold-light);}
     .tipo-desc  { font-weight:300; font-size:.88rem; line-height:1.7; color:var(--text-muted); }
     .tipo-features { list-style:none; display:flex; flex-direction:column; gap:.6rem;
       li { display:flex; align-items:center; gap:.6rem; font-size:.82rem; color:var(--text-muted); font-weight:300; svg { width:14px; height:14px; stroke:var(--gold); flex-shrink:0; } }
@@ -196,13 +196,13 @@ import { PageHeroComponent } from '../../shared/page-hero.component';
     .seg-grid   { display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--gold-border); }
     .seg-card   { background:var(--bg-primary); padding:2.5rem 2rem; display:flex; flex-direction:column; gap:1rem; transition:background var(--transition); &:hover { background:var(--bg-card-hover); } }
     .seg-icon   { width:40px; height:40px; display:flex; align-items:center; justify-content:center; :global(svg) { width:26px; height:26px; stroke:var(--gold); fill:none; stroke-width:1.3; } }
-    .seg-name   { font-weight:500; font-size:.72rem; letter-spacing:.2em; text-transform:uppercase; color:var(--text-primary); }
+    .seg-name   { font-weight:500; font-size:.72rem; letter-spacing:.2em; text-transform:uppercase; color:var(--gold); }
     .seg-desc   { font-weight:300; font-size:.85rem; line-height:1.75; color:var(--text-muted); }
 
     .cta-section { padding:8rem 2.5rem; background:var(--bg-primary); }
     .cta-inner   { display:grid; grid-template-columns:1fr auto; gap:4rem; align-items:center; padding:4rem; border:1px solid var(--gold-border); background:var(--bg-card); }
     .cta-text    { display:flex; flex-direction:column; gap:1.25rem; p { font-weight:300; font-size:.95rem; line-height:1.9; color:var(--text-muted); max-width:500px; } }
-    .cta-title   { font-family:var(--font-display); font-weight:300; font-size:clamp(1.8rem,3vw,2.6rem); line-height:1.15; em { font-style:italic; color:var(--gold-light); } }
+    .cta-title   { font-family:var(--font-display); font-weight:300; font-size:clamp(1.8rem,3vw,2.6rem); line-height:1.15; color: var(--gold) !important; em { font-style:italic; color:var(--gold-light); } }
     .cta-actions { display:flex; flex-direction:column; gap:1rem; flex-shrink:0; }
 
     .outros { padding:0 2.5rem 8rem; background:var(--bg-primary); .section-label { display:block; margin-bottom:2rem; } }
@@ -223,13 +223,13 @@ export class OmbrelonesPageComponent implements OnInit {
     { value: 'IP65', label: 'Resistência' },
   ];
   tipos = [
-    { title: 'Ombrelone Central', tag: 'Clássico', img: 'https://images.unsplash.com/photo-1519046904884-53103b34b206?w=700&q=80&auto=format&fit=crop',
+    { title: 'Ombrelone Central', tag: 'Clássico', img: 'assets/imagem/vernati (85).jpeg',
       desc: 'A linha clássica com haste central robusta. Elegância e estabilidade para piscinas, praias e varandas.',
       features: ['Diâmetros de 2m a 3m', 'Haste em alumínio anodizado', 'Tecido impermeável FPS 100', 'Personalização total de cores'] },
-    { title: 'Ombrelone Lateral', tag: 'Premium', img: 'https://images.unsplash.com/photo-1530053969600-caed2596d242?w=700&q=80&auto=format&fit=crop',
+    { title: 'Ombrelone Lateral', tag: 'Premium', img: 'assets/imagem/vernati (77).jpeg',
       desc: 'Haste lateral para máxima liberdade de sombra sem obstáculos centrais. Perfeito para lounges e mesas.',
       features: ['Braço lateral articulado', 'Base pesada antivento', 'Rotação de 360°', 'Ideal para restaurantes e hotéis'] },
-    { title: 'Ombrelone Gigante', tag: 'Comercial', img: 'https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=700&q=80&auto=format&fit=crop',
+    { title: 'Ombrelone Gigante', tag: 'Comercial', img: 'assets/imagem/vernati (74).jpeg',
       desc: 'Para grandes áreas de lazer e hospitality. Estrutura reforçada para eventos, clubes e resorts.',
       features: ['Diâmetros acima de 3.5m', 'Estrutura multivaretas', 'Ideal para áreas comerciais', 'Instalação profissional inclusa'] },
   ];

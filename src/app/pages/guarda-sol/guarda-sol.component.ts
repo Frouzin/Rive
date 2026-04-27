@@ -11,7 +11,7 @@ import { PageHeroComponent } from '../../shared/page-hero.component';
       title="Guarda-Sol"
       eyebrow="Proteção com Presença"
       subtitle="Estrutura reforçada, desempenho superior. Sofisticação, conforto e proteção real para ambientes externos."
-      img="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1920&q=80&auto=format&fit=crop"
+      img="assets/imagem/vernati (26).jpeg"
     ></app-page-hero>
 
     <!-- Intro -->
@@ -19,7 +19,7 @@ import { PageHeroComponent } from '../../shared/page-hero.component';
       <div class="container">
         <div class="intro-grid">
           <div class="intro-image">
-            <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=900&q=80&auto=format&fit=crop" alt="Guarda-Sol Rive Premium"/>
+            <img src="assets/imagem/vernati (71).jpeg" alt="Guarda-Sol Rive Premium"/>
             <div class="img-accent"></div>
           </div>
           <div class="intro-text">
@@ -122,11 +122,11 @@ import { PageHeroComponent } from '../../shared/page-hero.component';
         <span class="section-label">Conheça também</span>
         <div class="outros-grid">
           <a routerLink="/guarda-chuva" class="outro-card">
-            <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600&q=80&auto=format&fit=crop" alt="Guarda-Chuva"/>
+            <img src="assets/imagem/vernati (6).jpeg" alt="Guarda-Chuva"/>
             <div class="outro-info"><h4>Guarda-Chuva</h4><span>Proteção com assinatura →</span></div>
           </a>
           <a routerLink="/ombrelones" class="outro-card">
-            <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=600&q=80&auto=format&fit=crop" alt="Ombrelones"/>
+            <img src="assets/imagem/vernati (93).jpeg" alt="Ombrelones"/>
             <div class="outro-info"><h4>Ombrelones</h4><span>Seu lounge, ao sol →</span></div>
           </a>
         </div>
@@ -159,13 +159,13 @@ import { PageHeroComponent } from '../../shared/page-hero.component';
     .feature-icon { width:44px; height:44px; display:flex; align-items:center; justify-content:center;
       :global(svg) { width:26px; height:26px; stroke:var(--gold); fill:none; stroke-width:1.3; }
     }
-    .feature-title { font-weight:500; font-size:.72rem; letter-spacing:.2em; text-transform:uppercase; color:var(--text-primary); }
+    .feature-title { font-weight:500; font-size:.72rem; letter-spacing:.2em; text-transform:uppercase; color:var(--gold); }
     .feature-desc  { font-weight:300; font-size:.88rem; line-height:1.8; color:var(--text-muted); }
 
     .editorial { padding:8rem 2.5rem; background:var(--bg-primary); }
     .editorial-block { display:grid; grid-template-columns:1fr 1fr; gap:6rem; align-items:center; margin-bottom:6rem; &:last-child { margin-bottom:0; } &.reverse { direction:rtl; > * { direction:ltr; } } }
     .editorial-text { display:flex; flex-direction:column; gap:1.25rem; p { font-weight:300; font-size:.95rem; line-height:1.9; color:var(--text-muted); } }
-    .editorial-title { font-family:var(--font-display); font-weight:300; font-size:clamp(1.8rem,3vw,2.4rem); line-height:1.2; }
+    .editorial-title { font-family:var(--font-display); font-weight:300; font-size:clamp(1.8rem,3vw,2.4rem); line-height:1.2; color: var(--gold); em { font-style:italic; color:var(--gold-light); } }
     .editorial-img img { width:100%; aspect-ratio:4/3; object-fit:cover; }
 
     .gallery { padding:8rem 2.5rem; background:var(--bg-secondary); position:relative;
@@ -178,7 +178,7 @@ import { PageHeroComponent } from '../../shared/page-hero.component';
     .cta-section { padding:8rem 2.5rem; background:var(--bg-primary); }
     .cta-inner { display:grid; grid-template-columns:1fr auto; gap:4rem; align-items:center; padding:4rem; border:1px solid var(--gold-border); background:var(--bg-card); }
     .cta-text { display:flex; flex-direction:column; gap:1.25rem; p { font-weight:300; font-size:.95rem; line-height:1.9; color:var(--text-muted); max-width:500px; } }
-    .cta-title { font-family:var(--font-display); font-weight:300; font-size:clamp(1.8rem,3vw,2.6rem); line-height:1.15; em { font-style:italic; color:var(--gold-light); } }
+    .cta-title { font-family:var(--font-display); font-weight:300; font-size:clamp(1.8rem,3vw,2.6rem); line-height:1.15; color: var(--gold) !important; em { font-style:italic; color:var(--gold-light); } }
     .cta-actions { display:flex; flex-direction:column; gap:1rem; flex-shrink:0; }
 
     .outros { padding:0 2.5rem 8rem; background:var(--bg-primary); .section-label { display:block; margin-bottom:2rem; } }
@@ -208,14 +208,14 @@ export class GuardaSolPageComponent implements OnInit {
   ];
   editorials = [
     { label: 'Materiais', title: 'Estrutura à altura do design', text: 'Disponível com varão em alumínio ou madeira, o guarda-sol Rive combina resistência, estabilidade e acabamento refinado. Duas opções para compor diferentes propostas de estilo, sempre com presença premium.',
-      img: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=900&q=80&auto=format&fit=crop' },
+      img: 'assets/imagem/vernati (83).jpeg' },
     { label: 'Acabamento', title: 'Cuidado em cada detalhe', text: 'Dos arremates à finalização superior, cada elemento foi pensado para entregar um visual limpo, elegante e bem resolvido. Porque o luxo aparece justamente onde o olhar demora mais.',
-      img: 'https://images.unsplash.com/photo-1519046904884-53103b34b206?w=900&q=80&auto=format&fit=crop' }
+      img: 'assets/imagem/vernati (27).jpeg' }
   ];
   galleryImgs = [
-    { src: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=900&q=80&auto=format&fit=crop', alt: 'Praia com guarda-sol', wide: true },
-    { src: 'https://images.unsplash.com/photo-1519046904884-53103b34b206?w=600&q=80&auto=format&fit=crop', alt: 'Guarda-sol resort', wide: false },
-    { src: 'https://images.unsplash.com/photo-1530053969600-caed2596d242?w=600&q=80&auto=format&fit=crop', alt: 'Área externa com sombra', wide: false },
-    { src: 'https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=600&q=80&auto=format&fit=crop', alt: 'Lounge externo', wide: false },
+    { src: 'assets/imagem/vernati (24).jpeg', alt: 'Praia com guarda-sol', wide: true },
+    { src: 'assets/imagem/vernati (93).jpeg', alt: 'Guarda-sol resort', wide: false },
+    { src: 'assets/imagem/vernati (63).jpeg', alt: 'Área externa com sombra', wide: false },
+    { src: 'assets/imagem/vernati (68).jpeg', alt: 'Lounge externo', wide: false },
   ];
 }

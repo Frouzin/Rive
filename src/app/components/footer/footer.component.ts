@@ -106,14 +106,14 @@ import { RouterLink } from '@angular/router';
     </footer>
   `,
   styles: [`
-    footer { background: #050505; border-top: 1px solid var(--gold-border); }
+    footer { background: #d4d4d4; border-top: 1px solid var(--gold-border); }
     .footer-top { padding: 6rem 2.5rem; }
     .container { max-width: 1280px; margin: 0 auto; }
     .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 4rem; }
 
     .brand-logo { display: flex; flex-direction: column; line-height: 1; gap: 2px; margin-bottom: 1.25rem; }
-    .logo-main { font-family: var(--font-display); font-weight: 600; font-size: 1.8rem; letter-spacing: 0.15em; color: var(--text-primary); }
-    .logo-sub  { font-family: var(--font-body); font-weight: 200; font-size: 0.55rem; letter-spacing: 0.55em; color: var(--gold); text-transform: uppercase; }
+    .logo-main { font-family: var(--font-display); font-weight: 600; font-size: 1.8rem; letter-spacing: 0.15em; color: var(--gold); }
+    .logo-sub  { font-family: var(--font-body); font-weight: 400; font-size: 0.55rem; letter-spacing: 0.55em; color: var(--gold); text-transform: uppercase; }
     .brand-tagline { font-family: var(--font-body); font-weight: 300; font-size: 0.85rem; line-height: 1.8; color: var(--text-muted); margin-bottom: 2rem; max-width: 260px; }
 
     .social-links { display: flex; gap: 1rem;
@@ -131,7 +131,7 @@ import { RouterLink } from '@angular/router';
     .office { display: flex; gap: 0.75rem; margin-bottom: 1.75rem; &:last-child { margin-bottom: 0; }
       svg { width: 14px; height: 14px; stroke: var(--gold); flex-shrink: 0; margin-top: 2px; }
     }
-    .office-country { font-family: var(--font-body); font-weight: 400; font-size: 0.75rem; color: var(--text-primary); margin-bottom: 0.35rem; }
+    .office-country { font-family: var(--font-body); font-weight: 400; font-size: 0.75rem; color: var(--gold); margin-bottom: 0.35rem; }
     .office-address { font-family: var(--font-body); font-weight: 300; font-size: 0.78rem; line-height: 1.7; color: var(--text-muted);
       a { color: var(--gold); &:hover { color: var(--gold-light); } }
     }

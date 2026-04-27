@@ -162,7 +162,7 @@ import { PageHeroComponent } from '../../shared/page-hero.component';
 
     /* Form side */
     .form-header { margin-bottom: 3rem; display: flex; flex-direction: column; gap: 1rem; }
-    .form-title { font-family: var(--font-display); font-weight: 300; font-size: clamp(2rem,4vw,3rem); line-height: 1.1; em { font-style: italic; color: var(--gold-light); } }
+    .form-title { font-family: var(--font-display); color: var(--gold) !important; font-weight: 300; font-size: clamp(2rem,4vw,3rem); line-height: 1.1; em { font-style: italic; color: var(--gold-light); } }
 
     .form { display: flex; flex-direction: column; gap: 1.5rem; }
     .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
@@ -187,7 +187,7 @@ import { PageHeroComponent } from '../../shared/page-hero.component';
       textarea { resize: vertical; min-height: 140px; }
     }
 
-    .btn-primary { align-self: flex-start; padding: .9rem 2.5rem; cursor: pointer;
+    .btn-primary { align-self: flex-start; padding: .9rem 2.5rem; cursor: pointer; color: var(--bg-primary); background: var(--gold); border: none; font-size: .75rem; letter-spacing: .15em; text-transform: uppercase; font-weight: 500; transition: background var(--transition);
       &:disabled { opacity: .6; cursor: not-allowed; transform: none !important; background: var(--gold) !important; }
     }
 
@@ -198,7 +198,7 @@ import { PageHeroComponent } from '../../shared/page-hero.component';
 
     .office-card { display: flex; gap: 1rem; align-items: flex-start; }
     .office-icon { flex-shrink: 0; margin-top: 2px; svg { width: 16px; height: 16px; stroke: var(--gold); } }
-    .office-city  { font-weight: 400; font-size: .85rem; color: var(--text-primary); margin-bottom: .35rem; }
+    .office-city  { font-weight: 400; font-size: .85rem; color: var(--gold); margin-bottom: .35rem; }
     .office-addr  { font-weight: 300; font-size: .82rem; color: var(--text-muted); line-height: 1.6; margin-bottom: .5rem; }
     .office-tel   { font-size: .82rem; color: var(--gold); transition: color var(--transition-fast); &:hover { color: var(--gold-light); } }
 
