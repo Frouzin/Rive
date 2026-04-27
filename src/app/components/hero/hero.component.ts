@@ -40,16 +40,16 @@ import { RouterLink } from '@angular/router';
     .hero-img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.08); animation: heroZoom 12s ease-out forwards; }
     .hero-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(8,8,8,0.85) 0%, rgba(8,8,8,0.5) 50%, rgba(8,8,8,0.72) 100%); z-index: 1; }
     .hero-content { position: relative; z-index: 2; width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 2.5rem; padding-top: 80px; }
-    .hero-eyebrow { display: flex; align-items: center; gap: 1rem; font-family: var(--font-body); font-weight: 300; font-size: 0.68rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); margin-bottom: 2rem; animation: fadeUp 0.9s 0.3s both; }
+    .hero-eyebrow { display: flex; align-items: center; gap: 1rem; font-family: var(--font-body); font-weight: 300; font-size: 0.68rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--primary); margin-bottom: 2rem; animation: fadeUp 0.9s 0.3s both; }
     .hero-title { font-family: var(--font-display); font-weight: 300; font-size: clamp(3.5rem, 9vw, 8rem); line-height: 1.0; color: var(--text-primary); margin-bottom: 1.75rem; animation: fadeUp 0.9s 0.5s both;
       em { font-style: italic; color: var(--gold-light); }
     }
-    .hero-sub { font-weight: 400; font-size: 1rem; line-height: 1.8; color: rgba(65, 65, 65, 0.65); max-width: 400px; margin-bottom: 2.5rem; animation: fadeUp 0.9s 0.7s both; }
+    .hero-sub { font-weight: 400; font-size: 1rem; line-height: 1.8; color: rgba(255, 255, 255, 0.65); max-width: 400px; margin-bottom: 2.5rem; animation: fadeUp 0.9s 0.7s both; }
     .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 4rem; animation: fadeUp 0.9s 0.9s both; }
     .hero-stats { display: flex; align-items: center; gap: 2rem; animation: fadeUp 0.9s 1.1s both; }
     .stat { display: flex; flex-direction: column; gap: 0.25rem; }
-    .stat-n { font-family: var(--font-display); font-size: 1.6rem; font-weight: 600; color: var(--gold); line-height: 1; }
-    .stat-l { font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); font-weight: 500;}
+    .stat-n { font-family: var(--font-display); font-size: 1.6rem; font-weight: 600; color: var(--primary); line-height: 1; }
+    .stat-l { font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--bg-primary); font-weight: 500;}
     .stat-div { width: 1px; height: 32px; background: var(--gold-border); }
     .scroll-cue { position: absolute; bottom: 2.5rem; left: 2.5rem; z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 0.75rem; animation: fadeIn 1s 1.5s both; }
     .scroll-line { display: block; width: 1px; height: 48px; background: linear-gradient(to bottom, var(--gold), transparent); animation: scrollPulse 2s ease-in-out infinite; }
